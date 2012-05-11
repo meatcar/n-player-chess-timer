@@ -1,31 +1,35 @@
 <html>
     <head>
         <title>n player chess timer</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="css/bootstrap-responsive.min.css"/>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/bootstrap-responsive.css"/>
         <link rel="stylesheet" href="css/style.css"/>
     </head>
 <body>
     <div id="container">
-        <a class="btn" data-toggle="modal" href="#myModal" >Launch Modal</a> 
-        <div class="modal fade" id="init">
-            <div class="modal-header">
-                <button class="close" data-dismiss="modal">×</button>
-                <h3>Modal header</h3>
+        <div class="page-header">
+            <h1>
+                n player chess timer
+                <small>a javascript timer for a game of n-player chess</small>
+            </h1>
+        </div>
+        <div class="row">
+            <div class="span4" id="1">
+                <div class="timer">5:00</div>
             </div>
-            <div class="modal-body">
-                <p>One fine body…</p>
+            <div class="span4" id="2">
+                <div class="timer">5:00</div>
             </div>
-            <div class="modal-footer">
-                <a href="#" class="btn">Close</a>
-                <a href="#" class="btn btn-primary">Save changes</a>
+            <div class="span4" id="3">
+                <div class="timer">5:00</div>
             </div>
+        </div>
+        <div id="customize">
         </div>
     </div>
     <!-- scripts below here -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/ntimer.js"></script>
 </body>
 </html>
