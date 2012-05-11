@@ -1,0 +1,20 @@
+#container {
+    padding: 0 30px;
+}
+
+.player {
+    background: #ccc;
+    font-family: sans-serif;
+    padding: 30px;
+    border-radius: 6px;
+}
+
+.player .name {
+    font-size: 16px;
+}
+
+.player .time {
+    line-height: 1;
+    margin-bottom: 0;
+    font-size: 60px;
+}
