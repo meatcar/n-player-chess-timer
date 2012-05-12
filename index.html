@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title>n player chess timer</title>
         <link rel="stylesheet" href="css/bootstrap.css"/>
@@ -6,32 +7,56 @@
         <link rel="stylesheet" href="css/style.css"/>
     </head>
 <body>
-    <div id="container">
+    <div class="container">
         <div class="page-header">
             <h1>
-                n player chess timer
-                <small>a javascript timer for a game of n-player chess</small>
+                n-player chess timer
+                <small>hit space for next player</small>
             </h1>
         </div>
         <div class="row">
-            <div class="span4 player btn disabled" id="player1">
-                <p class="name"></p>
-                <h1 class="time"></h1>
-            </div>
-            <div class="span4 player btn btn-success disabled" id="player2">
-                <p class="name"></p>
-                <h1 class="time"></h1>
-            </div>
-            <div class="span4 player btn disabled" id="player3">
-                <p class="name"></p>
-                <h1 class="time"></h1>
+            <div class="span12">
+                <button class="btn btn-large" id="pause">
+                    Start/Pause
+                </button>
+                <button class="btn btn-large" id="restart">
+                    Restart
+                </button>
+                <button class="btn btn-large btn-info" data-toggle="modal" href="#customize">
+                    Players
+                </button>
             </div>
         </div>
-        <div id="customize">
+        <div class="row" id="timers">
+        </div>
+        <div class="modal hide fade in" id="customize">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">×</button>
+                <h3> Name</h3>
+            </div>
+            <div class="modal-body">
+                <table class="table table-striped">
+                    <thead>
+                        <th>Name</th>
+                        <th>Hour</th>
+                        <th>Min</th>
+                        <th>Sec</th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" id="addplayer">Add a player</button>
+                <button class="btn" id="rmplayer">Remove a player</button>
+                <button class="btn" data-dismiss="modal">Close</button> 
+                <button class="btn btn-primary" id="save">Save changes</button>
+            </div>
+        </div>
         </div>
     </div>
     <!-- scripts below here -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/ntimer.js"></script>
 </body>

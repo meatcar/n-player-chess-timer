@@ -1,12 +1,9 @@
-#container {
-    padding: 0 30px;
-}
 
 .player {
     background: #ccc;
     font-family: sans-serif;
-    padding: 30px;
     border-radius: 6px;
+    margin: 10px; 
 }
 
 .player .name {
@@ -17,4 +14,8 @@
     line-height: 1;
     margin-bottom: 0;
     font-size: 60px;
+}
+
+.timepicker {
+    width: 40px;
 }
