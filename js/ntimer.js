@@ -129,22 +129,23 @@ function addTablePlayer() {
     name = $(document.createElement('input')).attr({
             type: 'text',
             name: 'name',
-            placeholder: 'Name'}).addClass('form-inline');
+            placeholder: 'Name'
+    }).addClass('form-inline');
     hours = $(document.createElement('input')).attr({
             type: 'text',
             name: 'hours',
             placeholder: 'h',
-    }).addClass('form-inline').addClass('timepicker');
+    }).addClass('form-inline timefield');
     mins = $(document.createElement('input')).attr({
             type: 'text',
             name: 'minutes',
             placeholder: 'm',
-    }).addClass('form-inline').addClass('timepicker');
+    }).addClass('form-inline timefield');
     secs = $(document.createElement('input')).attr({
             type: 'text',
             name: 'seconds',
             placeholder: 's',
-    }).addClass('form-inline').addClass('timepicker');
+    }).addClass('form-inline timefield');
     tr.append($(document.createElement('td')).append(name));
     tr.append($(document.createElement('td')).append(hours));
     tr.append($(document.createElement('td')).append(mins));
