@@ -123,6 +123,7 @@ function makeTimers() {
  * Add a new row for player info in the modal dialog
  */
 function addTablePlayer() {
+    var tr, name, hours, mins, secs;
     tr = $(document.createElement('tr'));
     name = $(document.createElement('input')).attr({
             type: 'text',
