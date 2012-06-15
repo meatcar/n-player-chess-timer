@@ -14,6 +14,7 @@ function endGame() {
     }
     if (count == 1) {
         clearTimeout(timeout);
+        paused = true;
     }
     return count == 1;
 }
