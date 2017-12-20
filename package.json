@@ -1,0 +1,9 @@
+{
+  "name": "n-player-chess-timer",
+  "version": "2.0.0-alpha-1",
+  "description": "A timer for a game of n-player chess",
+  "main": "index.js",
+  "repository": "https://github.com/meatcar/n-player-chess-timer",
+  "author": "Denys Pavlov <denys.pavlov@gmail.com>",
+  "license": "MIT"
+}
