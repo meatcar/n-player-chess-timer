@@ -1,23 +1,37 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <Navigation/>
     <router-view/>
   </div>
 </template>
 
 <script>
+import Navigation from '@/components/Navigation'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    Navigation
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:900|Fira+Sans:300');
+
+html,
+body {
+  font-family: 'Fira Sans', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-size: 16px;
+  line-height: 1.45;
 }
+
+#app {
+  color: #000;
+  background-color: #fff;
+  font-size: ms(0);
+}
+
 </style>
