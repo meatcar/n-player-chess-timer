@@ -1,0 +1,6 @@
+export const ADD_TIMER = 'ADD_TIMER'
+export const REMOVE_TIMER = 'REMOVE_TIMER'
+export const EDIT_TIMER = 'EDIT_TIMER'
+export const STOP_EDIT_TIMER = 'STOP_EDIT_TIMER'
+export const SET_TIMER_NAME = 'SET_TIMER_NAME'
+export const SET_TIMER_TIME = 'SET_TIMER_TIME'
